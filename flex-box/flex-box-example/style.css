@@ -1,0 +1,62 @@
+/* using border-box model -- see https://frontendmasters.github.io/bootcamp/layout#box-model-types for explanation */
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+/* turn off margin/padding, set font and size for the page */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+}
+/* turn off bullets, push the box down the page, set a border plus width and height for demonstration purposes. */
+ul {
+  padding: 0;
+  margin: 5rem auto;
+  list-style-type: none;
+  border: 10px dotted #9b2226;
+  
+  
+  display: flex;
+  flex-flow: row wrap;
+  /* THIS ALL BELOW FOR MAIN AXIC: */
+  /* justify-content: flex-start; */
+  /* justify-content: flex-end; */
+  /* justify-content: center; */
+  /* justify-content: space-around; */
+  /* justify-content: space-between; */
+  /* justify-content: space-evenly; */
+
+  /* AND NOW FOR CROSS AXIC: */
+  justify-content: center;
+  /* align-items: flex-start;  */
+  /* align-items: flex-end; */
+  align-items: center;
+  /* align-items: baseline; */
+  /* align-items: stretch; */
+  
+
+  /* align-content: flex-start; */
+  /* align-content: flex-end; */
+  /* align-content: center; */
+  /* align-content: space-around; */
+  /* align-content: space-between; */
+  align-content: space-evenly;
+}
+/* set a border and background color to see each LI. Min-width and min-height are not necessarily a good idea in flexbox, but they are needed for the demo to better see the properties work. */
+li {
+  border: 2px solid #001219;
+  background-color: #ee9800;
+  height: 100px;
+  order: 1;
+  flex-basis: 30%;
+  flex-grow: 2;
+}
+
+.flex2{
+    order: 2;
+    flex-basis: 25%;
+}
