@@ -1,0 +1,57 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap'); */
+
+body{
+    background: purple;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: grid   ;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins";
+}
+div{
+    width: 450px;
+    height: 100px;
+    background: #fff;
+    padding: 20px;
+    margin-top: 50px;
+    border: 2px solid orange;
+    border-radius: 15px;
+}
+a:link{
+    color: black;
+}
+a:hover{
+    color: green;
+}
+a:active{
+    color: blue;
+}
+a:visited{
+    color: orange;
+}
+
+span{
+    font-size: 12px;
+    color: #666;
+}
+#html{
+    color: orange;
+}
+#css{
+    color: blue;
+}
+.js{
+    color: yellowgreen;
+    font-weight: 600;
+}
+.py{
+    color: darkblue;
+    font-weight: 600;
+}
+
+/* Have learned positions: */
+    /* relative e.g: if we shift it, it will be shifted from its original position */
+    /* absolute e.g: if we shift it, it will be shifted from the display...  */
+    /* fixed e.g: even if we try to shift it, it would never been shifted, because it is fixed */
